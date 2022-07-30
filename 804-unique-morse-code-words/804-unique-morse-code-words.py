@@ -6,10 +6,9 @@ class Solution:
         for i in range(len(words)):
             for j in words[i]:
                 s=s+l[ord(j)-97]
-            if s not in r:
-                r.append(s)
+            words[i]=s
             s=""
-        return len(r)
+        return len(set(words))
             
             
  
