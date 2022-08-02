@@ -6,7 +6,7 @@ class Solution:
         i,c=0,0
         while c<len(nums):
             if nums[i]==0:
-                nums.append(nums[i])
+                nums.append(0)
                 nums.pop(i)
             else:
                 i+=1
