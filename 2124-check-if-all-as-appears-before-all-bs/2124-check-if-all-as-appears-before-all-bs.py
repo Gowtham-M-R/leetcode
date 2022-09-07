@@ -1,5 +1,4 @@
 class Solution:
     def checkString(self, s: str) -> bool:
-        if 'ba' not in s:
-            return True
-        return False
+        s1 = sorted(s)
+        return "".join(s1) == s
