@@ -8,6 +8,4 @@ class Solution:
             return "".join(text)+ space * " "
         l = space // (len(text)-1)
         rem = space % (len(text)-1)
-        for i in text:
-            s+= i + (l * " ")
-        return s[:len(s)-l] + (rem * " ")
+        return (' ' * l).join(text) + (rem * " ")
